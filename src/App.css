@@ -1,0 +1,46 @@
+body {
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/* .drag {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: green;
+  z-index: 1;
+}
+
+.qr {
+  position: relative;
+
+} */
+
+.content {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.qr {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.drag {
+  position: absolute;
+  height: 100%;
+  /* background-color: pink; */
+  width: 100%;
+  z-index: 1;
+  cursor: move;
+}
+
