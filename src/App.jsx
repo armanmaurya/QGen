@@ -42,26 +42,16 @@ function App() {
     clipboard();
   }, [])
 
-  const calculate_size = (length) => {
-    const per_size = length / 3;
-    const size = Math.round(per_size);
-    console.log(size);
-    getCurrent().setSize(new PhysicalSize(size, size))
+  // const calculate_size = (length) => {
+  //   const per_size = length / 3;
+  //   const size = Math.round(per_size);
+  //   console.log(size);
+  //   getCurrent().setSize(new PhysicalSize(size, size))
 
-  }
-
-
-
+  // }
 
   return (
     <div className="content">
-
-      {/* <QRCode className="qr"
-          size={256}
-          style={{ height: "100%", width: "100%" }}
-          value={content}
-          viewBox={`0 0 256 256`}
-        /> */}
       <QRCodeSVG includeMargin={true} className="qr" level="L" value={content} />
       <div data-tauri-drag-region className="drag"></div>
 
